@@ -1,0 +1,6 @@
+<!-- קומפוננטה להצגת ההזמנות כולם -->
+<ul>
+    <li *ngFor="let o of this.orders">
+        id: {{o.id}} | nameCustomer: {{o.nameCustomer}} | numTickets: {{o.numTickets}} | destination: {{o.destination}}
+    </li>
+</ul>

@@ -1,0 +1,23 @@
+h1, h2, h3{
+    direction: rtl;
+}
+/* עיצוב העיגול של הצבעים לבחירה */
+.colorCircle{
+    border-radius: 50%;
+    width: 5%;
+    height: 75px;
+    margin: 20px;
+    border: 1px solid;
+    display: inline-block;
+    margin-left: 12px;
+}
+/* רשימת כל הצבעים */
+#all-colors {
+    /* border: 1px solid; */
+    height: 100px;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 10px;
+    display: flex;
+}

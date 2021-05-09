@@ -1,0 +1,7 @@
+<!-- קומפוננטה להצגת משתמש וכניסה כסוכן -->
+<span>משתמש: {{currentuser}}</span>
+
+<button (click)="enterAgent()">היכנס כסוכן</button>
+<input *ngIf="x==2" type="number" placeholder="סיסמא" [(ngModel)]="pass"/>
+<button (click)="enterAsAgent()" *ngIf="x==2">אישור</button>
+

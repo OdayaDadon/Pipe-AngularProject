@@ -1,0 +1,12 @@
+<h2>בחר יעד מהרשימה</h2>
+<ul>
+    <button #bu (click)="bu.style.backgroundColor='red'; currentDestination=des" *ngFor="let des of this.destinations">
+        {{des}}
+    </button>
+</ul>
+
+<h2>מלא את הפרטים לצורך השלמת ההזמנה של הכרטיסים</h2>
+<input type="number" placeholder="id" [(ngModel)]=idOrder/>
+<input type="number" placeholder="count tickets" [(ngModel)]=countTickets/>
+<input type="text" placeholder="name" [(ngModel)]=customerName/>
+<button (click)="add()">add</button>

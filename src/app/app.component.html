@@ -1,0 +1,38 @@
+<div [style.direction]="'rtl'">
+    <h1>שיעורי בית חני כהן ואודיה דדון</h1>
+
+    <!-- קומפוננטה להצגת משתמש נוכחי -->
+    <app-show-user></app-show-user>
+    
+    <!-- קומפוננטה להוספת יעד חדש למערכת -->
+    <app-add-destination *ngIf="current==agent"></app-add-destination>
+    
+    <!-- קומפוננטה להצגת היעדים -->
+    <app-show-destinations></app-show-destinations>
+
+    <!-- קומפוננטה להצגת ההזמנות -->
+    <app-show-orders></app-show-orders>
+<p></p>
+
+
+    <!-- Pipe -->
+
+    <!--  הצגת תאריך בתצוגת ברירת מחדל-->
+    <span>{{this.date}}</span><br/>
+    <!-- תאריך -->
+    <span>{{this.date | date}}</span><br/>
+    <!-- תאריך מלא -->
+    <span>{{this.date | date: 'fullTime'}}</span><br/>
+    <!-- מציג תאריך בתבנית מסוימת -->
+    <span>{{this.date | date: 'dd / LL / yyyy'}}</span><br/>
+    <!-- הצגת סכום כסף עם הסימן דולר -->
+    <span>{{this.price | currency}}</span><br/>
+    <!-- הצגת סכום כסף עם הסימן שקל -->
+    <span>{{this.price | currency : 'ILS'}}</span><br/>
+    <!-- הצגת האוביקט כמחרוזת -->
+    <span>{{this.task | json}}</span><br/>
+    <!-- הצגת אות ראשונה באות גדולה והשאר קטנות -->
+    <span>{{firstName | titlecase}}</span><br/>
+    <!-- הצגת באותיות קטנות -->
+    <span>{{lastName | lowercase}}</span><br/>
+</div>
